@@ -1,0 +1,12 @@
+
+; !!!! This dune file is generated from the package.json file by pesy. If you modify it by hand
+; !!!! your changes will be undone! Instead, edit the package.json and then rerun 'esy pesy' at the project root.
+; !!!! If you want to stop using pesy and manage this file by hand, change pacakge.json's 'esy.build' command to: refmterr dune build -p  pgo
+(executable
+   ; The entrypoint module
+   (name PgoApp)  ;  From package.json main field
+   ; The name of the executable (runnable via esy x PgoApp.exe) 
+   (public_name PgoApp.exe)  ;  From package.json name field
+   (libraries  pgo.lib console.lib pgocaml lwt lwt_ppx lwt.unix ppx_let ) ;  From package.json require field (array of strings)
+   (preprocess ( pps ppx_pgsql lwt_ppx ))  ; From package.json preprocess field
+)
