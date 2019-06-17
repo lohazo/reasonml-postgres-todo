@@ -4,6 +4,8 @@
 [![CircleCI](https://circleci.com/gh/yourgithubhandle/pgo/tree/master.svg?style=svg)](https://circleci.com/gh/yourgithubhandle/pgo/tree/master)
 
 
+Minimal example todo app with pgocaml and reasonml native
+
 **Contains the following libraries and executables:**
 
 ```
